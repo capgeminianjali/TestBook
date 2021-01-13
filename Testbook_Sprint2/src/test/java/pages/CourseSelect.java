@@ -46,7 +46,8 @@ public class CourseSelect extends Testbook_Base{
 	}
 	
 	public void courseTab() throws Exception
-	{
+	{   
+		Thread.sleep(3000);
 		new Actions(driver).click().perform();
 		try
 		{	
