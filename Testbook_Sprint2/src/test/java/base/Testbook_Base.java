@@ -103,7 +103,7 @@ public class Testbook_Base {
 	@AfterSuite
 	public void teardown()
 	{
-		ext.flush();		//save the report
+		ext.flush();		
 		driver.quit();		//close if all browsers which are open
 		try
 		{

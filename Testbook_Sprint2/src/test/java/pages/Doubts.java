@@ -107,13 +107,15 @@ public class Doubts extends Testbook_Base
 		takescreenshot("TestBookdoubtsadded.png");
 	}
 
-	public void selDoubts() 
+	public void selDoubts() throws Exception 
 	{
+		Thread.sleep(3000);
 		dots.click();
 	}
 
-	public void delDoubts() 
+	public void delDoubts() throws Exception 
 	{
+		Thread.sleep(3000);
 		if(del.isDisplayed())
 		{
 			del.click();
@@ -122,6 +124,7 @@ public class Doubts extends Testbook_Base
 			testlog.log(Status.PASS,"TestBook Doubts Deleted succesfully");
 			takescreenshot("TestBookdoubtsdeleted.png");
 			driver.navigate().refresh();
+			Thread.sleep(3000);
 		}
 		else
 		{
