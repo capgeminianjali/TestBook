@@ -1,0 +1,8 @@
+<suite name="Suite">
+	<test name="test">
+		<classes>
+			<class name="base.Testbook_Base"/>
+			<class name="testRunner.Workflow1_testRunner"/>
+		</classes>
+	</test>	
+</suite>
