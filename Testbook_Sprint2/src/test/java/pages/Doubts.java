@@ -51,7 +51,8 @@ public class Doubts extends Testbook_Base
 	
 	public void doubtsTab() throws Exception
 	{	
-		driver.navigate().refresh();
+		driver.switchTo().parentFrame();
+		new Actions(driver).click().perform();
 		Thread.sleep(5000);
 		try
 		{
